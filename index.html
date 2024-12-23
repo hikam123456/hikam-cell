@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hikam Cell</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
         user-select: none;
       }
 
@@ -60,24 +57,102 @@
         -webkit-overflow-scrolling: touch;
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Hikam Cell",
+      "description": "Konter termurah dan terlengkap di Planet Mars. Terpercaya aman sejahtera sejak 2015.",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/hikamadnann?igsh=cHB5Z2k1cXQ3aHRs",
+        "https://www.facebook.com/Lahsihikam",
+        "https://www.youtube.com/example"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Planet Mars",
+        "addressCountry": "Mars"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Product List",
+        "itemListElement": [
+          {
+            "@type": "Product",
+            "name": "Indosat",
+            "description": "Beli sekarang juga beli 1 dapat 1 beli 2 dapat 2",
+            "image": "https://www.example.com/Indosat.png"
+          },
+          {
+            "@type": "Product",
+            "name": "Telkomsel",
+            "description": "Jaringan Luas Di Seluruh Indonesia",
+            "image": "https://www.example.com/Telkomsel.jpg"
+          },
+          {
+            "@type": "Product",
+            "name": "XL",
+            "description": "Paket Murah Sinyal Embes",
+            "image": "https://www.example.com/XL.png"
+          },
+          {
+            "@type": "Product",
+            "name": "Three",
+            "description": "Cocok untuk kamu yang suka Youtuban",
+            "image": "https://www.example.com/three.jpg"
+          },
+          {
+            "@type": "Product",
+            "name": "Axis",
+            "description": "Dapatkan Kuota Termurah se planet pluto",
+            "image": "https://www.example.com/Axis.png"
+          },
+          {
+            "@type": "Product",
+            "name": "Smartfren",
+            "description": "Genggam Perdanamu Dengan Kedua Tangan mu",
+            "image": "https://www.example.com/smartfren.jpg"
+          },
+          {
+            "@type": "Product",
+            "name": "Temperglass",
+            "description": "Lindungi Hp mu Dari Kaki mu",
+            "image": "https://www.example.com/temperglass.jpg"
+          },
+          {
+            "@type": "Product",
+            "name": "Headset",
+            "description": "Lindungi Telingamu Dari Jeritan Tetangga",
+            "image": "https://www.example.com/headseat.jpg"
+          }
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.example.com/contact-us"
+      }
+    }
+    </script>
   </head>
   <body>
-
+    <!-- Header -->
     <header class="site-header sticky-top py-1">
-      <nav class="container d-flex flex-column flex-md-row
-        justify-content-between">
+      <nav class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="#indosat">List
-          Produk</a>
+        <a class="py-2 d-none d-md-inline-block" href="#indosat">List Produk</a>
         <a class="py-2 d-none d-md-inline-block" href="#Temperglass">Harga</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Jadwal</a>
       </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3
-        text-center bg-light">
+      <!-- Intro Section -->
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 fw-normal">Hikam Cell</h1>
           <p class="lead fw-normal">Konter termurah dan terlengkap di Planet Mars. Terpercaya aman sejahtera sejak 1945</p>
@@ -85,139 +160,46 @@
         </div>
       </div>
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5
-          text-center overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5" id="#indosat">Indosat</h2>
-            <p class="lead">Beli sekarang juga beli 1 dapat 1 beli 2 dapat 2</p>
-            <img src="Indosat.png" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
+      <!-- Product Sections -->
+      <section id="products">
+        <!-- Repeated product sections -->
+        <!-- Example for Indosat -->
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Indosat</h2>
+              <p class="lead">Beli sekarang juga beli 1 dapat 1 beli 2 dapat 2</p>
+              <img src="Indosat.png" class="img-thumbnail" alt="Indosat" width="400" height="400">
+            </div>
           </div>
         </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Telkomsel</h2>
-            <p class="lead">Jaringan Luas Di Seluruh Indonesia</p>
-            <img src="Telkomsel.jpg" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Xl</h2>
-            <p class="lead">Paket Murah Sinyal Embes</p>
-            <img src="XL.png" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-        <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5
-          text-center overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Three</h2>
-            <p class="lead">Cocok untuk kamu yang suka Youtuban</p>
-            <img src="three.jpg" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Axis</h2>
-            <p class="lead">Dapatkan Kuota Termurah se planet pluto</p>
-            <img src="Axis.png" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Smartfren</h2>
-            <p class="lead">Genggam Perdanamu Dengan Kedua Tangan mu</p>
-            <img src="smartfren.jpg" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 p-3" id="#Temperglass">
-            <h2 class="display-5">Temperglass</h2>
-            <p class="lead">Lindungi Hp mu Dari Kaki mu</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 80%; height:
-            300px; border-radius: 21px 21px 0 0;">
-            <img src="temperglass.jpg" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center
-          overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Headseat</h2>
-            <p class="lead">Lindungi Telingamu Dari Jeritan Tetangga</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 80%; height:
-            300px; border-radius: 21px 21px 0 0;">
-            <img src="headseat.jpg" class="img-thumbnail" alt="..." width="400"
-              height="400"/>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
+
+    <!-- Footer -->
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="none" stroke="currentColor" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="2" class="d-block mb-2"
-            role="img" viewBox="0 0 24 24"><title>Product</title><circle
-              cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69
-                8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31
-                16H2.83m13.79-4l-5.74 9.94"/></svg>
-              <small class="d-block mb-3 text-muted">&copy; 2024–2025</small>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Sosial Media</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary"
-                    href="https://www.instagram.com/princecellnocan?igsh=cHB5Z2k1cXQ3aHRs ">Instagram</a></li>
-                <li><a class="link-secondary" href="#">Facebook</a></li>
-                <li><a class="link-secondary" href="#">Youtube</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Pelayanan</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Live Chat</a></li>
-                <li><a class="link-secondary" href="#">Call Center</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Tentang</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Kontak Kita</a></li>
-                <li><a class="link-secondary" href="#">Lokasi Kita</a></li>
-                <li><a class="link-secondary" href="#">Privacy</a></li>
-                <li><a class="link-secondary" href="#">Terms</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+          <small class="d-block mb-3 text-muted">&copy; 2024–2025</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Sosial Media</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="https://www.instagram.com/princecellnocan?igsh=cHB5Z2k1cXQ3aHRs">Instagram</a></li>
+            <li><a class="link-secondary" href="#">Facebook</a></li>
+            <li><a class="link-secondary" href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Pelayanan</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Live Chat</a></li>
+            <li><a class="link-secondary" href="#">Call Center</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-      </body>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
